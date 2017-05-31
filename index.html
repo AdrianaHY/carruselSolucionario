@@ -4,30 +4,68 @@
 	<meta charset="UTF-8">
 	<title>Carousel con JS</title>
 	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="carousel">
-		<div data-slide="0" class="carousel-content active">
-			<img src="" alt="Imagen 1">
+	<header class="container-fluid">
+		<div class="row">
+			<div class="page-header col-xs-12">
+			  <h1>Salvador Dalí <small>Carrusel hecho con jQuery</small></h1>
+			</div>
 		</div>
-		<div data-slide="1" class="carousel-content ">
-			<img src="" alt="Imagen 2">
+	</header>
+	<section class="container">
+		<div class="row">
+			<div class="carousel col-xs-12">
+				<div data-slide="0" class="carousel-content active">
+					<img src="assets/img/dali1.jpg" alt="Imagen 1">
+				</div>
+				<div data-slide="1" class="carousel-content ">
+					<img src="assets/img/dali2.jpg" alt="Imagen 2">
+				</div>
+				<div data-slide="2" class="carousel-content ">
+					<img src="assets/img/dali4.png" alt="Imagen 3">
+				</div>
+				<div data-slide="3" class="carousel-content">
+					<img src="assets/img/dali3.jpg" alt="Imagen 4">
+				</div>
+			</div>
+			<div class="controls col-xs-12 col-xs-offset-5 padding">
+				<a href="#" class="previous flechitas">&#60;</a>
+				<button type="button" data-target="0" class="control dot"></button>
+				<button type="button" data-target="1" class="control dot"></button>
+				<button type="button" data-target="2" class="control dot"></button>
+				<button type="button" data-target="3" class="control dot"></button>
+				<a href="#" class="next flechitas">&#62;</a>
+			</div>
 		</div>
-		<div data-slide="2" class="carousel-content ">
-			<img src="" alt="Imagen 3">
+	</section>
+
+	<section class="container">
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="assets/img/bio.jpg" alt="bio">
+		      <div class="caption">
+		        <h3>Dalí</h3>
+		        <p>1904-1989</p>
+		        <p><a href="#" class="btn btn-primary" role="button">Biografía</a> <a href="#" class="btn btn-default" role="button">Carrusel</a></p>
+		      </div>
+		    </div>
+		  </div>
+			<div class="jumbotron col-sm-6">
+			  <h1>La única diferencia  </h1>
+			  <p>entre un loco y yo es que yo no estoy loco.</p>
+			</div>
 		</div>
-		<div data-slide="3" class="carousel-content">
-			<img src="" alt="Imagen 4">
-		</div>
-	</div>
-	<div class="controls">
-		<a href="#" class="previous">&#60;</a>
-		<button type="button" data-target="0" class="control"></button>
-		<button type="button" data-target="1" class="control"></button>
-		<button type="button" data-target="2" class="control"></button>
-		<button type="button" data-target="3" class="control"></button>
-		<a href="#" class="next">&#62;</a>
-	</div>
+
+	</section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="app.js"></script>
 </body>
