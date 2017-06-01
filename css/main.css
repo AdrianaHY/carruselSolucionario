@@ -7,7 +7,7 @@
 }
 img{
 	width: 100%;
-	height: auto;
+	height: 600px;;
 }
 .padding{
 	padding-bottom: 10%;
@@ -29,4 +29,10 @@ img{
   text-decoration: none;
   color: #bbb;
   font-size: 2vw;
+}
+.background-color{
+	background-color:#8181F7;
+}
+.color-font{
+	color:#fff;
 }
